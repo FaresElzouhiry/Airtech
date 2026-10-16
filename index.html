@@ -6,12 +6,12 @@
 <meta name="theme-color" content="#1e2d50">
 <title>ايرتك جاهز | قطع غيار أنظمة الهواء المضغوط</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css">
 </head>
 <body dir="rtl">
 
-<!-- القائمة الجانبية (مخفية افتراضياً، تفتح بزر ☰ وتتبني من script.js) -->
-<nav class="side" id="side" aria-label="القائمة الرئيسية">
+<!-- القائمة الجانبية (تتبني من script.js) -->
+<nav class="side" id="side">
   <a class="logo" href="#/home"><img src="images/logo.jpg" alt="ايرتك جاهز"></a>
   <ul></ul>
   <div class="ct">+966 53 953 4767<br>airtech.ksa2@gmail.com</div>
@@ -22,13 +22,7 @@
   <div class="top">
     <button class="burger" id="burger" aria-label="القائمة">☰</button>
     <h1 id="pt"></h1>
-    <!-- البحث: أيقونة تفتح الحقل عند الضغط عليها -->
-    <div class="sbox" id="sbox">
-      <button class="sbtn" id="sbtn" type="button" aria-label="بحث" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-      </button>
-      <input id="q" type="search" placeholder="ابحث بالاسم أو الموديل…" aria-label="بحث" autocomplete="off">
-    </div>
+    <input id="q" placeholder="ابحث بالاسم أو الموديل…">
     <button class="cartbtn" id="open">🛒 <span class="lbl">السلة</span> <b id="cnt">0</b></button>
   </div>
   <main class="view" id="view"></main>
@@ -46,6 +40,6 @@
 <div class="modal" id="modal"></div>
 
 <script src="products.js"></script>
-<script src="script.js?v=3"></script>
+<script src="script.js"></script>
 </body>
 </html>
